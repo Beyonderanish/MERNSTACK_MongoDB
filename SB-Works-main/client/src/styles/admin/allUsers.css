@@ -1,0 +1,82 @@
+.all-users-page {
+    padding: 4vh 2vw;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(240, 240, 240, 0.7)); /* Lighter gradient for a glass effect */
+    backdrop-filter: blur(15px); /* Blur effect for a glassy look */
+    background: url('asx.jpg') no-repeat center center fixed;
+    border-radius: 1rem; /* Rounded corners for the container */
+}
+
+.all-users-page h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #004d6b; /* Dark teal for headings */
+    margin-bottom: 2vh; /* Add margin for spacing */
+    text-align: center; /* Center the heading */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+.all-users {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better separation */
+}
+
+.user {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    border: 1px solid rgba(238, 70, 14, 0.5); /* Lighter border */
+    padding: 2vh 1.5vw;
+    border-radius: 1rem; /* Rounder corners */
+    background: rgba(255, 255, 255, 0.8); /* Translucent background for user cards */
+    backdrop-filter: blur(10px); /* Adds a glass effect */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth shadow and scale transition */
+}
+
+.user:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Enhanced shadow effect on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.user span {
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Stack user details */
+}
+
+.user span b {
+    margin: 0;
+    font-weight: 600; /* Bolder font for emphasis */
+    color: #00695c; /* Darker teal for names */
+    font-size: 1.2rem; /* Slightly larger font size */
+}
+
+.user span p {
+    margin: 0;
+    color: rgba(22, 95, 129, 0.9); /* More opaque color for better readability */
+    font-size: 0.9rem; /* Slightly larger font size */
+}
+
+/* Optional: Add a status label for better user experience */
+.user span .status {
+    padding: 5px 10px;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: #4caf50; /* Green for active users */
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.3s; /* Smooth transition for status */
+}
+
+/* Style for inactive users */
+.user span .status.inactive {
+    background-color: #f44336; /* Red for inactive users */
+}
+
+/* Hover effects for status labels */
+.user span .status:hover {
+    background-color: #45a049; /* Darker green on hover for active users */
+}
+
+.user span .status.inactive:hover {
+    background-color: #d32f2f; /* Darker red on hover for inactive users */
+}

@@ -1,0 +1,137 @@
+/* General Page Layout */
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section with Glassy Effect */
+.landing-hero {
+    background: url('../images/landing-bg.jpg') center/cover no-repeat;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+}
+
+.landing-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark glass overlay */
+}
+
+/* Navigation Bar */
+.landing-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.landing-nav h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff; /* White for a clean contrast */
+    font-family: 'Kaushan Script', cursive;
+}
+
+.landing-nav button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Cool blue gradient */
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    margin-left: auto; /* Aligns to the right */
+}
+
+.landing-nav button:hover {
+    background-color: #0059b2; /* Deep blue on hover */
+    box-shadow: 0 4px 15px rgba(0, 89, 178, 0.5); /* Soft glow effect */
+    transform: translateY(-2px);
+}
+
+/* Hero Text Section */
+.landing-hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1); /* Glassy look */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.landing-hero-text h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.landing-hero-text p {
+    font-size: 1.25rem;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+}
+
+/* Join Button */
+.landing-hero-text button {
+    padding: 15px 40px;
+    font-size: 1.25rem;
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Blue gradient button */
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.landing-hero-text button:hover {
+    background-color: #0059b2;
+    box-shadow: 0 8px 25px rgba(0, 89, 178, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing-nav h3 {
+        font-size: 1.8rem;
+    }
+
+    .landing-hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .landing-hero-text p {
+        font-size: 1rem;
+    }
+
+    .landing-hero-text button {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}

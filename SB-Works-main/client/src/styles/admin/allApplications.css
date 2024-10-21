@@ -1,0 +1,112 @@
+.user-applications-page {
+    padding: 3vh 3vw; 
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(240, 242, 245, 0.5)); /* Glass effect */
+    backdrop-filter: blur(10px); /* Adds blur for glass effect */
+    background: url('asx.jpg') no-repeat center center fixed;
+    border-radius: 1rem; /* Rounded corners for the main container */
+}
+
+.user-applications-page h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #003b65; 
+    margin-bottom: 2vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+.user-applications-body {
+    box-shadow: rgba(60, 64, 67, 0.25) 0px 1px 3px, rgba(60, 64, 67, 0.15) 0px 4px 8px;
+    height: 76vh;
+    border-radius: 1rem; 
+    margin-top: 2.5vh;
+    padding-top: 2.5vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.8); /* Translucent background */
+    backdrop-filter: blur(15px); /* Blurring for glass effect */
+}
+
+.user-application {
+    padding: 2.5vh 3vw;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.2s;
+    border-radius: 0.5rem; /* Rounded corners for each application */
+}
+
+.user-application:hover {
+    background-color: rgba(12, 105, 148, 0.25); /* More pronounced hover effect */
+    transform: scale(1.03); 
+}
+
+.user-application-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-application hr {
+    height: 2px;
+    background-color: rgba(84, 86, 86, 0.3);
+    width: 100%;
+    margin: 1.5vh 0;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: rgba(110, 109, 109, 0.25);
+    height: inherit;
+}
+
+.user-application-half {
+    width: 48%;
+}
+
+.user-application-half h4 {
+    font-size: 1.3rem;
+    color: rgba(26, 83, 121, 0.9); 
+    margin-bottom: 1vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+.user-application-half p {
+    font-size: 1rem;
+    color: rgba(70, 70, 70, 0.85); 
+}
+
+.user-application-half span {
+    display: block;
+}
+
+.user-application-half span h5 {
+    font-size: 1.2rem;
+    color: rgba(9, 55, 86, 0.95); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+.user-application-half span p {
+    margin: 0;
+    color: rgba(100, 100, 100, 0.9);
+}
+
+.user-application-half span .application-skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 1vh; 
+}
+
+.user-application-half span .application-skills p {
+    color: #281c1d;
+    border: 1px solid #eddbdc;
+    padding: 6px 12px;
+    border-radius: 1rem;
+    font-size: 0.8rem; 
+    background-color: rgba(238, 73, 80, 0.25); /* More pronounced background color */
+    transition: background-color 0.3s; /* Transition for hover */
+}
+
+.user-application-half span .application-skills p:hover {
+    background-color: rgba(238, 73, 80, 0.5); /* Darker on hover */
+}
+
+.user-application-half h6 {
+    font-size: 1rem;
+    color: rgba(80, 80, 80, 0.75); 
+}
